@@ -17,7 +17,7 @@ kill_timeout = '5s'
   AUTOSTOP_TIMEOUT_INIT = '120'
   ENABLE_AUTOSTOP = 'TRUE'
   EULA = 'TRUE'
-  MEMORY = '6G'
+  MEMORY = '14G'
   PRIMARY_REGION = 'dfw'
 
 [[mounts]]
