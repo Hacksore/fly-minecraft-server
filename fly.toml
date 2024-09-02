@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for mc-server-patient-pine-5616 on 2024-09-02T17:41:29-05:00
+# fly.toml app configuration file generated for mc-server-patient-pine-5616 on 2024-09-02T17:55:44-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -23,8 +23,8 @@ kill_timeout = '5s'
 [[mounts]]
   source = 'mc_server'
   destination = '/data'
+  initial_size = '5gb'
   processes = ['app']
-  initial_size = "5gb"
 
 [[services]]
   protocol = 'tcp'
