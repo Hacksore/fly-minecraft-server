@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for mc-server-dry-fog-2322 on 2024-09-02T17:32:11-05:00
+# fly.toml app configuration file generated for mc-server-long-sun-5027 on 2024-09-02T17:38:07-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'mc-server'
+app = 'mc-server-long-sun-5027'
 primary_region = 'dfw'
 kill_signal = 'SIGINT'
 kill_timeout = '5s'
@@ -17,7 +17,7 @@ kill_timeout = '5s'
   AUTOSTOP_TIMEOUT_INIT = '120'
   ENABLE_AUTOSTOP = 'TRUE'
   EULA = 'TRUE'
-  MEMORY = '4G'
+  MEMORY = '6G'
   PRIMARY_REGION = 'dfw'
 
 [[mounts]]
@@ -38,6 +38,6 @@ kill_timeout = '5s'
     soft_limit = 20
 
 [[vm]]
-  memory = '12gb'
+  memory = '8gb'
   cpu_kind = 'shared'
   cpus = 4
