@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for minecraft-mc on 2024-07-18T19:26:58+01:00
+# fly.toml app configuration file generated for mc-server-dry-fog-2322 on 2024-09-02T17:32:11-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'minecraft-mc'
-primary_region = 'lhr'
+app = 'mc-server'
+primary_region = 'dfw'
 kill_signal = 'SIGINT'
 kill_timeout = '5s'
 
@@ -17,8 +17,8 @@ kill_timeout = '5s'
   AUTOSTOP_TIMEOUT_INIT = '120'
   ENABLE_AUTOSTOP = 'TRUE'
   EULA = 'TRUE'
-  MEMORY = '1G'
-  PRIMARY_REGION = 'lhr'
+  MEMORY = '4G'
+  PRIMARY_REGION = 'dfw'
 
 [[mounts]]
   source = 'mc_server'
@@ -38,6 +38,6 @@ kill_timeout = '5s'
     soft_limit = 20
 
 [[vm]]
-  memory = '2gb'
+  memory = '12gb'
   cpu_kind = 'shared'
   cpus = 4
