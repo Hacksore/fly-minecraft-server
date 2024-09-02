@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for mc-server-long-sun-5027 on 2024-09-02T17:38:07-05:00
+# fly.toml app configuration file generated for mc-server-patient-pine-5616 on 2024-09-02T17:41:29-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'mc-server-long-sun-5027'
+app = 'mc-server-patient-pine-5616'
 primary_region = 'dfw'
 kill_signal = 'SIGINT'
 kill_timeout = '5s'
@@ -24,6 +24,7 @@ kill_timeout = '5s'
   source = 'mc_server'
   destination = '/data'
   processes = ['app']
+  initial_size = "5gb"
 
 [[services]]
   protocol = 'tcp'
